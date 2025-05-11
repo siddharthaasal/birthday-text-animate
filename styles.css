@@ -1,0 +1,72 @@
+h1 {
+	font-size: 3em;
+}
+
+h1 span {
+	position: relative;
+	display: inline-block;
+	color: #FF3C41;
+	height: 1.25em;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+
+h1 span span {
+	display: block;
+	animation: animateWords 10s infinite ease;
+}
+
+/* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
+@keyframes animateWords {
+	0% {
+		transform: translateY(0%);
+	}
+	
+	10% {
+		transform: translateY(-100%);
+	}
+	
+	20% {
+		transform: translateY(-200%);
+	}
+	
+	30% {
+		transform: translateY(-300%);
+	}
+	
+	40% {
+		transform: translateY(-400%);
+	}
+
+	50% {
+		transform: translateY(-500%);
+	}
+
+    60% {
+		transform: translateY(-600%);
+	}
+
+    70% {
+		transform: translateY(-700%);
+	}
+
+    80% {
+		transform: translateY(-800%);
+	}
+
+	90% {
+		transform: translateY(-900%);
+	}
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #220424;
+	color: white;
+	font-family: 'Geologica', sans-serif;
+}
